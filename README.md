@@ -1,6 +1,6 @@
 <!-- <img src=".logo.png" alt=npx-latest/><br/> -->
 
-  <div align="center">
+<div align="center">
 
 [![npm](https://img.shields.io/npm/v/npx-latest)](https://www.npmjs.com/package/npx-latest)
 [![TypeScript](https://badgen.net/npm/types/env-var)](http://www.typescriptlang.org/)
@@ -8,25 +8,25 @@
 [![npm](https://img.shields.io/npm/dw/npx-latest)](https://www.npmjs.com/package/npx-latest)
 </div>
 
-  npx-latest
+# npx-latest
 
-  <!-- descriptionHere -->
+<!-- descriptionHere -->
 
-  <br/>
+<br/>
 
-  <div align="center">
-    <h3> 🏗 ❗ Work In Progress ❗🛠 </h3>
-  </div>
+<div align="center">
+  <h3> 🏗 ❗ Work In Progress ❗🛠 </h3>
+</div>
 
-  <br/>
+<br/>
 
-  ## Installation
-  ```bash
-  npm install npx-latest
-  # or
-  yarn add npx-latest
-  ```
+## Installation
+```bash
+npm install npx-latest
+# or
+yarn add npx-latest
+```
 
-  ## Usage
+## Usage
 
-  ## [Changelog](CHANGELOG.md)
+## [Changelog](CHANGELOG.md)

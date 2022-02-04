@@ -1,6 +1,15 @@
-import path from 'path';
+// https://www.stefanjudis.com/snippets/how-to-import-json-files-in-es-modules-node-js/
+import { createRequire } from 'module';
+import path, { dirname } from 'path';
+import { fileURLToPath } from 'url';
 
-const pkgJson = require('../../package.json') as Record<string, string>;
+
+
+const __dirname = dirname(fileURLToPath(import.meta.url));
+const require = createRequire(import.meta.url);
+const pkgJson = require('../../package.json');
+
+
 /** General and commonly used info about this program. */
 export const Program = {
   /** From package.json */
@@ -12,10 +21,4 @@ export const Program = {
   srcPath: path.join(__dirname, '..'),
   /** Path of the program root dir, where for example is the package.json. */
   rootPath: path.join(__dirname, '..', '..'),
-  /** Short for path.join(Program.cwd, ...segments) */
-  pathFromCwd: (...segments: string[]): string => path.join(Program.cwd, ...segments),
-  /** Short for path.join(Program.srcPath, ...segments) */
-  pathFromSrc: (...segments: string[]): string => path.join(Program.srcPath, ...segments),
-  /** Short for path.join(Program.rootPath, ...segments) */
-  pathFromRoot: (...segments: string[]): string => path.join(Program.rootPath, ...segments),
 };
